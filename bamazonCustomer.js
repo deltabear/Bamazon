@@ -1,5 +1,8 @@
+// require dotenv package for security
+require('dotenv').config()
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+var keys = require("./keys")
 
 // create the connection information for the sql database
 var connection = mysql.createConnection({
@@ -9,10 +12,10 @@ var connection = mysql.createConnection({
     port: 3306,
   
     // Your username
-    user: "root",
+    user: keys.mysqlAuth.user,
   
     // Your password
-    password: "secret",
+    password: keys.mysqlAuth.password,
     database: "bamazon"
   })
 
@@ -59,6 +62,7 @@ inquirer
         type: "input",
         name: "qty",
         message: "How much would you like to purchase?",
+        //error handling again, will be changed to fit project directions
         validate: function(value){
           if(isNaN(value)){
             return false;
@@ -67,8 +71,6 @@ inquirer
           }
         }
       }
-
-
 // customer places order, application CHECKS IF store has enough stock to meet customer's request
     // ELSE, command line responds "Product stock cannot meet customer demands. Transaction cancelled"
     // order is prevented from going through

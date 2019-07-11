@@ -6,7 +6,7 @@ var keys = require("./keys")
 
 // create the connection information for the sql database
 var connection = mysql.createConnection({
-    host: "localhost",
+    host: keys.mysqlAuth.host,
   
     // Your port; if not 3306
     port: 3306,
@@ -61,7 +61,7 @@ inquirer
       {
         type: "input",
         name: "qty",
-        message: "How much would you like to purchase?",
+        message: "How many do you wish to purchase?",
         //error handling again, will be changed to fit project directions
         validate: function(value){
           if(isNaN(value)){
@@ -71,11 +71,12 @@ inquirer
           }
         }
       }
+   ]).then(function(){
+   }
+  )})}
 // customer places order, application CHECKS IF store has enough stock to meet customer's request
     // ELSE, command line responds "Product stock cannot meet customer demands. Transaction cancelled"
     // order is prevented from going through
 // Store has enough stock:
   // update SQL database to reflect quantity
   // transaction goes through, shows customer total cost of their purchase
-    ])
-  })}

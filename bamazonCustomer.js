@@ -71,6 +71,7 @@ var shopping = function() {
         console.log("");
         console.log(res[0].product_name + " ready to purchase.");
         console.log("Your order will be " + quantity + " " + res[0].product_name + " at " + res[0].price);
+        console.log("Total: " + quantity*res[0].price );
 
         var newQuantity = res[0].stock_quantity - quantity;
         connection.query(

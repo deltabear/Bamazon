@@ -74,10 +74,7 @@ var shopping = function() {
 
         var newQuantity = res[0].stock_quantity - quantity;
         connection.query(
-          "UPDATE products SET stock_quantity = " +
-                    newQuantity +
-                    " WHERE id = " +
-                    res[0].id, function(err, resUpdate) {
+          "UPDATE products SET stock_quantity = " + newQuantity +" WHERE item_id= " + res[0].item_id, function(err, resUpdate) {
                       if (err) throw err;
                       console.log("");
                       console.log("Your Order has been Processed");

@@ -14,7 +14,7 @@ This would not have been completed without the [video tutorial generously put up
 The application will then display a table of Bamazon's stock including ID #s, product name, product department, price, and amount
 of items currently in stock.
 
-![](/images/node_storefront.png)
+![](images/node_storefront.png)
 
 2. Start shopping!
 * Now that the app is running and loaded, it will ask you what item you want to buy, via inputting it's unique id number.
@@ -25,11 +25,11 @@ of items currently in stock.
     * Putting in a quantity number that exceeds the current stock will prompt the shopping queries to begin again.
     * Leaving the field empty or inputting 0 results the app calculating that your purchase of 0 items costs 0.00. I have elected to keep it as is because it is amusing.
 
-![](/images/node_storefront2.png)
+![](images/node_storefront_2.png)
 
 4. Finalized purchase.
 * Now the application calculates your total, connects with the database, and changes the stock quantity accordingly!
 
-![](/images/updated_tableSQL.png)
+![](images/Updated_tableSQL.png)
 
 ##Thank you for shopping with Bamazon! Support Worker's Rights!

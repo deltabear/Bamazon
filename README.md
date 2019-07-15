@@ -32,4 +32,4 @@ of items currently in stock.
 
 ![](Images/Updated_tableSQL.png)
 
-##Thank you for shopping with Bamazon! Support Worker's Rights!
+## Thank you for shopping with Bamazon! Support Worker's Rights!

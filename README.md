@@ -2,8 +2,6 @@
 
 * A virtual storefront CLI app, minus any evil corporations.
 
-This would not have been completed without the [video tutorial generously put up on Youtube](https://youtu.be/gfTS4A8WHHE) - for free- by [Dcoxmen](https://github.com/Dcoxmen)
-
 * Made with `Node.js`, `MySQL`, `Inquirer`, `Keys`, and `Javascript`
 
 ## To Use:
@@ -40,3 +38,7 @@ of items currently in stock.
 ![](Images/Updated_tableSQL.png)
 
 ## Thank you for shopping with Bamazon! Support Worker's Rights!
+
+## Acknowledgments
+
+* This would not have been completed without the [video tutorial generously put up on Youtube](https://youtu.be/gfTS4A8WHHE) - for free- by [Dcoxmen](https://github.com/Dcoxmen)

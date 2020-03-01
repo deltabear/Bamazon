@@ -6,7 +6,14 @@ This would not have been completed without the [video tutorial generously put up
 
 * Made with `Node.js`, `MySQL`, `Inquirer`, `Keys`, and `Javascript`
 
-## How to use Bamazon
+## To Use:
+    * Install Node.js and Bamazon GitHub repo
+    * Install application dependencies 
+    * Navigate in your terminal/command prompt to your Bamazon folder.
+    * Begin every command with `node bamazonCustomer.js`
+You are now ready to issue commands to Bamazon!
+
+## Bamazon Commands
 
 1. `node bamazonCustomer.js`
 
